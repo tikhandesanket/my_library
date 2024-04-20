@@ -1,0 +1,30 @@
+#add Subscription details in DB
+Subscription.create(name: 'Silver Plan', max_books: 2, max_magazines: 0)
+Subscription.create(name: 'Gold Plan', max_books: 3, max_magazines: 1)
+Subscription.create(name: 'Platinum Plan', max_books: 4, max_magazines: 2)
+
+#add User details in DB
+User.create(name: 'Sanket Tikhande ', age: 30, subscription_id: 1)
+User.create(name: 'Sandeep Smith', age: 5, subscription_id: 2)
+User.create(name: 'Rahul Doe', age: 30, subscription_id: 3)
+User.create(name: 'Pankaj Smith', age: 15, subscription_id: 2)
+User.create(name: 'Sanket Patil ', age: 30, subscription_id: 1)
+User.create(name: 'Harikesh Smith', age: 18, subscription_id: 2)
+User.create(name: 'Rahul Tride', age: 30, subscription_id: 3)
+User.create(name: 'Jasmeen Smith', age: 25, subscription_id: 2)
+User.create(name: 'Sanket Rao ', age: 30, subscription_id: 1)
+User.create(name: 'Rupali Smith', age: 5, subscription_id: 2)
+User.create(name: 'Deepali Doe', age: 13, subscription_id: 3)
+User.create(name: 'Ujain Smith', age: 25, subscription_id: 2)
+
+#add books details in DB
+Item.create(title: 'Book A', genre: true, is_available: true, category:"book",user_id:1 )
+Item.create(title: 'Magazine A', genre: "", is_available: true, category:"magazine",user_id:2)
+Item.create(title: 'Book B', genre: "", is_available: true, category:"book",user_id:2)
+Item.create(title: 'Magazine B', genre: true, is_available: true, category:"magazine",user_id:2)
+Item.create(title: 'Book C', genre: "", is_available: true, category:"book",user_id:3)
+Item.create(title: 'Magazine C', genre:true, is_available: true, category:"magazine",user_id:3)
+Item.create(title: 'Book D', genre: "", is_available: true, category:"book",user_id:4)
+Item.create(title: 'Magazine D', genre: "", is_available: true, category:"magazine",user_id:4)
+Item.create(title: 'Book E', genre: "", is_available: true, category:"book",user_id:5)
+Item.create(title: 'Magazine E', genre: true, is_available: true, category:"magazine",user_id:5)
