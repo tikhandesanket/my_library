@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple E-Commerce</title>
+  <style>
+    /* Resetting default browser styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Global styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Header styles */
+    header {
+      background: linear-gradient(135deg, #fceabb, #f8b500); /* Soft Gradient */
+      color: #333;
+      padding: 10px 0;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 32px;
+    }
+
+    nav ul {
+      list-style: none;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    /* Product grid styles */
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 120px
+    }
+
+    .product {
+      width: 30%;
+      background-color: #fff;
+      margin-bottom: 20px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .product:hover {
+      transform: translateY(-5px);
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .product h2 {
+      font-size: 24px;
+      margin-bottom: 5px;
+      color: #333;
+    }
+
+    .product p {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    .original-price {
+      font-size: 16px;
+      color: #999;
+      text-decoration: line-through;
+      margin-bottom: 5px;
+    }
+
+    .discount-price {
+      font-size: 20px;
+      font-weight: bold;
+      color: #f00; /* Red color for discounted price */
+      margin-bottom: 10px;
+    }
+
+    button {
+      background: linear-gradient(135deg, #fceabb, #f8b500); /* Soft Gradient */
+      color: #333;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: linear-gradient(135deg, #f8b500, #fceabb); /* Reverse Gradient on Hover */
+    }
+
+    /* Footer styles */
+    footer {
+      background: linear-gradient(135deg, #fceabb, #f8b500); /* Soft Gradient */
+      color: #333;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 50px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    header {
+      background: linear-gradient(135deg, #fceabb, #f8b500); /* Soft Gradient */
+      color: #333;
+      padding: 10px 0;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      position: fixed; /* Fixed position */
+      width: 100%; /* Take full width of viewport */
+      top: 0; /* Stick to the top */
+      z-index: 999; /* Ensure it stays on top of other content */
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>My E-Commerce Store</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <!-- Product Grid -->
+    <section class="products">
+      <article class="product">
+        <img src="/home/sanket/Pictures/IRD/dosa.jpg" alt="Product 1">
+        <h2>Product 1</h2>
+        <p>Description of Product 1</p>
+        <span class="original-price">$24.99</span>
+        <span class="discount-price">$19.99</span>
+        <button>Add to Cart</button>
+      </article>
+       <article class="product">
+        <img src="/home/sanket/Pictures/IRD/dosa.jpg" alt="Product 1">
+        <h2>Product 1</h2>
+        <p>Description of Product 1</p>
+        <span class="original-price">$24.99</span>
+        <span class="discount-price">$19.99</span>
+        <button>Add to Cart</button>
+      </article>
+       <article class="product">
+        <img src="/home/sanket/Pictures/IRD/dosa.jpg" alt="Product 1">
+        <h2>Product 1</h2>
+        <p>Description of Product 1</p>
+        <span class="original-price">$24.99</span>
+        <span class="discount-price">$19.99</span>
+        <button>Add to Cart</button>
+      </article>
+       <article class="product">
+        <img src="/home/sanket/Pictures/IRD/dosa.jpg" alt="Product 1">
+        <h2>Product 1</h2>
+        <p>Description of Product 1</p>
+        <span class="original-price">$24.99</span>
+        <span class="discount-price">$19.99</span>
+        <button>Add to Cart</button>
+      </article>
+       <article class="product">
+        <img src="/home/sanket/Pictures/IRD/dosa.jpg" alt="Product 1">
+        <h2>Product 1</h2>
+        <p>Description of Product 1</p>
+        <span class="original-price">$24.99</span>
+        <span class="discount-price">$19.99</span>
+        <button>Add to Cart</button>
+      </article>
+       <article class="product">
+        <img src="/home/sanket/Pictures/IRD/dosa.jpg" alt="Product 1">
+        <h2>Product 1</h2>
+        <p>Description of Product 1</p>
+        <span class="original-price">$24.99</span>
+        <span class="discount-price">$19.99</span>
+        <button>Add to Cart</button>
+      </article>
+       <article class="product">
+        <img src="/home/sanket/Pictures/IRD/dosa.jpg" alt="Product 1">
+        <h2>Product 1</h2>
+        <p>Description of Product 1</p>
+        <span class="original-price">$24.99</span>
+        <span class="discount-price">$19.99</span>
+        <button>Add to Cart</button>
+      </article>
+       <article class="product">
+        <img src="/home/sanket/Pictures/IRD/dosa.jpg" alt="Product 1">
+        <h2>Product 1</h2>
+        <p>Description of Product 1</p>
+        <span class="original-price">$24.99</span>
+        <span class="discount-price">$19.99</span>
+        <button>Add to Cart</button>
+      </article>
+      <!-- Add more products as needed -->
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 My E-Commerce Store. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
+
